@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#7bb5e4</color>
+    <color name="colorAccent">#7bb5e4</color>
+
+    <!--New Added My Colors-->
+    <color name="firstColor">#ffffff</color>
+    <color name="secondColor">#2778ba</color>
+    <color name="thirdColor">#FF4081</color>
+    <color name="Wheat">#5dff40</color>
+    <color name="back">#c10f97</color>
+    <color name="Wheat2">#ffcc40</color>
+    <color name="back2">#075056</color>
+    <color name="textColor">#FFFFFF</color>
+</resources>

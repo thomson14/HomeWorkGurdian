@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "514119411692",
+    "firebase_url": "https://homeworkgurdian.firebaseio.com",
+    "project_id": "homeworkgurdian",
+    "storage_bucket": "homeworkgurdian.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514119411692:android:2bbe50d858bc5e36ed02c9",
+        "android_client_info": {
+          "package_name": "com.example.ranjeetkumarrana.homeworkgurdian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514119411692-o5h8p55j6d6pa8a4hunmej5kr6bnp8rd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ranjeetkumarrana.homeworkgurdian",
+            "certificate_hash": "650301171c57048aa562597a7acbfe919b168a7d"
+          }
+        },
+        {
+          "client_id": "514119411692-37d4plibg0k07u574lnffpac4itfcf86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs6fR0TJpIZ9H3NSbM5AzAuTRV_raOSc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514119411692-37d4plibg0k07u574lnffpac4itfcf86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
