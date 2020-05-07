@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:gravity = "center|left|left"
+                android:gravity = "center_horizontal"
                 android:layout_margin="15sp"
                 >
 
@@ -32,35 +32,45 @@
                     android:layout_gravity="center"
                     android:id="@+id/imageAtLogin"
                     android:src="@drawable/child" />
-                        <com.rengwuxian.materialedittext.MaterialEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/emailID"
-                            android:hint="Email ID : "
-                            android:inputType="text"
-                            android:textColor="#000"
-                            android:textColorHint="#000"
-                            android:textSize="25sp"
-                            app:met_singleLineEllipsis="true"
-                            app:met_baseColor="#000"
-                            app:met_floatingLabel="highlight"
-                            app:met_primaryColor="#000"
-                            />
 
-                        <com.rengwuxian.materialedittext.MaterialEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/passwordID"
-                            android:hint="Password : "
-                            android:inputType="textPassword"
-                            android:textColor="#000"
-                            android:textColorHint="#000"
-                            android:textSize="25sp"
-                            app:met_singleLineEllipsis="true"
-                            app:met_baseColor="#000"
-                            app:met_floatingLabel="highlight"
-                            app:met_primaryColor="#000"
-                            />
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emailID"
+                    app:mtf_labelColor="#666"
+                    app:mtf_image="@drawable/ic_email_home_24dp" >
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:textColor="#333"
+                        android:textSize="15sp" />
+
+                </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/passwordID"
+                    app:mtf_labelColor="#666"
+                    app:mtf_image="@drawable/ic_person_home_24dp">
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:password="true"
+                        android:hint="Password"
+                        android:textColor="#333"
+                        android:textSize="15sp" />
+
+                </com.github.florent37.materialtextfield.MaterialTextField>
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -116,4 +126,4 @@
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

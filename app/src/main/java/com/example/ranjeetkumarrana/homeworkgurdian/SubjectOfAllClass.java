@@ -1,15 +1,18 @@
 package com.example.ranjeetkumarrana.homeworkgurdian;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class SubjectOfAllClass extends AppCompatActivity implements AdapterView.OnItemSelectedListener
 {
@@ -24,7 +27,7 @@ public class SubjectOfAllClass extends AppCompatActivity implements AdapterView.
         setContentView(R.layout.activity_subject_of_all_class);
 
         //todo-----------------Toolbar-----------------//
-        toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar2);
+        toolbar = findViewById(R.id.toolbar2);
         toolbar.setTitle("Subjects");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

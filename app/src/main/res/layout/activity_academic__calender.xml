@@ -1,21 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/textColor"
+    android:orientation="vertical"
+    android:background="@drawable/gradiant_background"
     android:id="@+id/rootLayout3"
     tools:context=".Academic_Calender">
 
-    <RelativeLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        app:title="Academic Calender"
+        app:titleTextColor="#ffffff"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/editCalender"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:hint="type name of the calender "
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalender"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:text="add Academic Calender"/>
+    <!--<Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnViewCalender"
+        android:text="Show Academic Calenders"
+        android:onClick="btn_action"/> -->
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/ic_add_floating_home_24dp"
+        android:layout_marginLeft="280dp"
+        android:background="#ffffff"
+        android:layout_marginTop="630dp"
+        android:onClick="btn_action"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="295dp"
+        android:layout_marginTop="700dp"
+        android:textColor="#ffffff"
+        android:text="SHOW"/>
+
+
+
+   <!-- <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v7.widget.Toolbar
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar1"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -24,7 +79,7 @@
             app:titleTextColor="@color/textColor"
             android:background="@color/colorAccent"/>
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_below="@+id/toolbar1"
             android:id="@+id/recyleView"
             tools:listitem="@layout/item_list"
@@ -35,7 +90,7 @@
             android:layoutAnimation="@anim/layout_animation"
 
             />
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="80sp"
             android:layout_height="80sp"
             android:layout_alignParentEnd="true"
@@ -43,15 +98,11 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="18dp"
             android:id="@+id/Add_New_Calender"
-            android:visibility="gone"
             android:layout_marginRight="19dp"
             android:layout_marginBottom="19dp"
             android:elevation="20sp"
             android:src="@drawable/add1"
             tools:layout_marginRight="19dp" />
 
-    </RelativeLayout>
-
-
-
-</android.support.constraint.ConstraintLayout>
+    </RelativeLayout>-->
+</FrameLayout>
