@@ -49,6 +49,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:singleLine="true"
                 android:hint="Username"
                 android:textColor="#333"
                 android:textSize="15sp" />
@@ -70,6 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
+                android:singleLine="true"
                 android:textColor="#333"
                 android:textSize="15sp" />
 
@@ -89,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:hint="mobile no"
                 android:textColor="#333"
+                android:singleLine="true"
                 android:textSize="15sp" />
 
         </com.github.florent37.materialtextfield.MaterialTextField>
@@ -107,6 +110,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:password="true"
+                android:singleLine="true"
                 android:hint="Password"
                 android:textColor="#333"
                 android:textSize="15sp" />

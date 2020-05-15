@@ -253,8 +253,7 @@ public class MainActivityAllDetails extends AppCompatActivity implements Navigat
 
             UserProfileFragment userProfileFragment = new UserProfileFragment();
             FragmentManager manager = getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.mainLayout,userProfileFragment
-                    ,userProfileFragment.getTag()).commit();
+            manager.beginTransaction().replace(R.id.mainLayout,userProfileFragment,userProfileFragment.getTag()).commit();
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             toolbar.setTitle("My Profile");
         }

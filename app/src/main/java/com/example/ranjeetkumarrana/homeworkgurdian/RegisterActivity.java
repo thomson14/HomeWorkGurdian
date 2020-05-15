@@ -88,6 +88,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
                         if (task.isSuccessful()) {
+
                             registerProgress.setVisibility(View.INVISIBLE);
                             FirebaseUser firebaseUser = auth.getCurrentUser();
                             assert firebaseUser != null;
@@ -112,6 +113,7 @@ public class RegisterActivity extends AppCompatActivity {
                                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                         startActivity(intent);
                                         finish();
+                                        //startActivity(new Intent(RegisterActivity.this,UserProfileFragment.class));
                                     }
                                     task.addOnFailureListener(new OnFailureListener() {
                                         @Override

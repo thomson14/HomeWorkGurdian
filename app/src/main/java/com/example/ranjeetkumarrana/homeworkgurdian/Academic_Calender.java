@@ -39,12 +39,7 @@ import java.util.List;
 
 public class Academic_Calender extends AppCompatActivity {
 
-  /*  private Toolbar toolbar;
-    private FloatingActionButton floatingActionButton;
 
-    private RecyclerView recyclerView;
-    List<ListItem> list;
-    ItemAdapter adapter;*/
 
    Button btnCalender,btnViewCalender;
    TextInputEditText edtCalender;
@@ -64,12 +59,6 @@ public class Academic_Calender extends AppCompatActivity {
             storageReference = FirebaseStorage.getInstance().getReference();
             databaseReference = FirebaseDatabase.getInstance().getReference("uploads");
 
-//            btnViewCalender.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    startActivity(new Intent(getApplicationContext(),View_Academic_Pdf.class));
-//                }
-//            });
 
             btnCalender.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -78,66 +67,7 @@ public class Academic_Calender extends AppCompatActivity {
                 }
             });
 
-        //*****************************************************************************************
-        /*recyclerView = (RecyclerView) findViewById(R.id.recyleView);
-        list = new ArrayList<>();
-        list.add(new ListItem("Name:- Ranjeet Kumar Rana", "This is old Schedule"));
-        list.add(new ListItem("Name:- Ranjeet Kumar Rana", "This is old Schedule"));
-        list.add(new ListItem("Name:- Ranjeet Kumar Rana", "This is old Schedule"));
-        list.add(new ListItem( "Name:- Ranjeet Kumar Rana", "This is old Schedule"));
-        list.add(new ListItem( "Name:- Ranjeet Kumar Rana", "This is old Schedule"));
 
-
-        adapter = new ItemAdapter(this, list);
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        //todo-----------------Toolbar-----------------//
-        toolbar =  findViewById(R.id.toolbar1);
-        toolbar.setTitle("Academic Calender");
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        //mActionBar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_action_back));
-        toolbar.setNavigationOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                startActivity(new Intent(Academic_Calender.this, MainActivityAllDetails.class));
-                finish();
-            }
-        });
-        //todo-------------------------------end toolbar--------------------------------//
-
-        floatingActionButton = (FloatingActionButton) findViewById(R.id.Add_New_Calender);
-        floatingActionButton.setBackground(new ColorDrawable(Color.parseColor("#FFFFFF")));
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                intent.setType();
-              //  startActivityForResult(intent, 7);
-            /*}
-        });
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data)
-    {
-        switch (requestCode)
-        {
-            case 7:
-                if(requestCode == RESULT_OK)
-                {
-                    String pathHolder = data.getData().getPath();
-                    Toast.makeText(Academic_Calender.this,"Successfully Uploaded",Toast.LENGTH_LONG).show();
-                }
-                break;
-        }
-        //super.onActivityResult(requestCode, resultCode, data);
-    }*/
     }
 
     public void selectPdfFile(){
