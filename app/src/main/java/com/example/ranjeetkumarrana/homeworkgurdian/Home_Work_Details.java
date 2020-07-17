@@ -2,45 +2,47 @@ package com.example.ranjeetkumarrana.homeworkgurdian;
 
 public class Home_Work_Details {
 
-    String siemensId;
-    String expenseTypeSpinner_D;
-    String expense_site_D;
-    String dateExpense_D ;
-    String priceEx_D ;
-    String description_D ;
+    String studentId;
+    String student_Class;
+    String subject;
+    String date ;
+    String roll_no ;
+    String description ;
 
     public Home_Work_Details(){}
 
-    public Home_Work_Details(String siemensId, String expenseTypeSpinner_D, String expense_site_D, String dateExpense_D, String priceEx_D, String description_D) {
-        this.siemensId = siemensId;
-        this.expenseTypeSpinner_D = expenseTypeSpinner_D;
-        this.expense_site_D = expense_site_D;
-        this.dateExpense_D = dateExpense_D;
-        this.priceEx_D = priceEx_D;
-        this.description_D = description_D;
+    public Home_Work_Details(String studentId, String student_Class, String subject, String date, String roll_no, String description) {
+        this.studentId = studentId;
+        this.student_Class = student_Class;
+        this.subject = subject;
+        this.date = date;
+        this.roll_no = roll_no;
+        this.description = description;
     }
 
-    public String getSiemensId() {
-        return siemensId;
+    public String getStudentId() {
+        return studentId;
     }
 
-    public String getExpenseTypeSpinner_D() {
-        return expenseTypeSpinner_D;
+    public String getStudent_Class() {
+        return student_Class;
     }
 
-    public String getExpense_site_D() {
-        return expense_site_D;
+    public String getSubject() {
+        return subject;
     }
 
-    public String getDateExpense_D() {
-        return dateExpense_D;
+    public String getDate() {
+        return date;
     }
 
-    public String getPriceEx_D() {
-        return priceEx_D;
+    public String getRoll_no() {
+        return roll_no;
     }
 
-    public String getDescription_D() {
-        return description_D;
+    public String getDescription() {
+        return description;
     }
+
+
 }

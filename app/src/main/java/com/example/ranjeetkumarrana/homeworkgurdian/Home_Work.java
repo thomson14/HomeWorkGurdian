@@ -175,8 +175,8 @@ public class Home_Work extends AppCompatActivity implements AdapterView.OnItemSe
             });
 
 
-            Log.d("Show", databaseReferenceSI.toString() + " **** " + siemensDetails.getSiemensId() +
-                    siemensDetails.getDateExpense_D() + siemensDetails.getDescription_D()
+            Log.d("Show", databaseReferenceSI.toString() + " **** " + siemensDetails.studentId +
+                    siemensDetails.getDate() + siemensDetails.getDescription()
             );
 
 

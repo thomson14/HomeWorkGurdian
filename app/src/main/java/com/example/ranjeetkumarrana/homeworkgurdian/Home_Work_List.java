@@ -36,11 +36,11 @@ public class Home_Work_List extends ArrayAdapter<Home_Work_Details> {
         TextView textView_S_Desc = listViewItem.findViewById(R.id.S_Description_list);
 
         Home_Work_Details siemensDetail = siemensList.get(position);
-        textview_S_type.setText(siemensDetail.getExpenseTypeSpinner_D());
-        textView_S_site.setText(siemensDetail.getExpense_site_D());
-        textView_S_date.setText(siemensDetail.getDateExpense_D());
-        textView_S_price.setText(siemensDetail.getPriceEx_D());
-        textView_S_Desc.setText(siemensDetail.getDescription_D());
+        textview_S_type.setText(siemensDetail.getStudent_Class());
+        textView_S_site.setText(siemensDetail.getSubject());
+        textView_S_date.setText(siemensDetail.getDate());
+        textView_S_price.setText(siemensDetail.getRoll_no());
+        textView_S_Desc.setText(siemensDetail.getDescription());
 
         return listViewItem;
     }
